@@ -1,0 +1,153 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'Rollno'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'Rollno'
+annotate view ZZCIC_CIT_DATABASE2 with
+{
+  @EndUserText.label: 'Rollno'
+  @UI.facet: [ {
+    label: 'General Information', 
+    id: 'GeneralInfo', 
+    purpose: #STANDARD, 
+    position: 10 , 
+    type: #IDENTIFICATION_REFERENCE
+  } ]
+  @UI.identification: [ {
+    position: 10 , 
+    label: 'Rollno'
+  } ]
+  @UI.lineItem: [ {
+    position: 10 , 
+    label: 'Rollno'
+  } ]
+  @UI.selectionField: [ {
+    position: 10 
+  } ]
+  Rollno;
+  
+  @EndUserText.label: 'StudentName'
+  @UI.identification: [ {
+    position: 20 , 
+    label: 'StudentName'
+  } ]
+  @UI.lineItem: [ {
+    position: 20 , 
+    label: 'StudentName'
+  } ]
+  @UI.selectionField: [ {
+    position: 20 
+  } ]
+  StudentName;
+  
+  @EndUserText.label: 'Gender'
+  @UI.identification: [ {
+    position: 30 , 
+    label: 'Gender'
+  } ]
+  @UI.lineItem: [ {
+    position: 30 , 
+    label: 'Gender'
+  } ]
+  @UI.selectionField: [ {
+    position: 30 
+  } ]
+  Gender;
+  
+  @EndUserText.label: 'Age'
+  @UI.identification: [ {
+    position: 40 , 
+    label: 'Age'
+  } ]
+  @UI.lineItem: [ {
+    position: 40 , 
+    label: 'Age'
+  } ]
+  @UI.selectionField: [ {
+    position: 40 
+  } ]
+  Age;
+  
+  @EndUserText.label: 'Dept'
+  @UI.identification: [ {
+    position: 50 , 
+    label: 'Dept'
+  } ]
+  @UI.lineItem: [ {
+    position: 50 , 
+    label: 'Dept'
+  } ]
+  @UI.selectionField: [ {
+    position: 50 
+  } ]
+  Dept;
+  
+  @UI.identification: [ {
+    position: 60 
+  } ]
+  @UI.lineItem: [ {
+    position: 60 
+  } ]
+  @UI.selectionField: [ {
+    position: 60 
+  } ]
+  CreatedBy;
+  
+  @UI.identification: [ {
+    position: 70 
+  } ]
+  @UI.lineItem: [ {
+    position: 70 
+  } ]
+  @UI.selectionField: [ {
+    position: 70 
+  } ]
+  CreatedAt;
+  
+  @UI.identification: [ {
+    position: 80 
+  } ]
+  @UI.lineItem: [ {
+    position: 80 
+  } ]
+  @UI.selectionField: [ {
+    position: 80 
+  } ]
+  LastChangedBy;
+  
+  @UI.identification: [ {
+    position: 90 
+  } ]
+  @UI.lineItem: [ {
+    position: 90 
+  } ]
+  @UI.selectionField: [ {
+    position: 90 
+  } ]
+  LastChangedAt;
+  
+  @UI.identification: [ {
+    position: 100 
+  } ]
+  @UI.lineItem: [ {
+    position: 100 
+  } ]
+  @UI.selectionField: [ {
+    position: 100 
+  } ]
+  LocalLastChangedAt;
+  
+  @EndUserText.label: '_BaseEntity'
+  @UI.identification: [ {
+    position: 110 , 
+    label: '_BaseEntity'
+  } ]
+  @UI.lineItem: [ {
+    position: 110 , 
+    label: '_BaseEntity'
+  } ]
+  @UI.selectionField: [ {
+    position: 110 
+  } ]
+  _BaseEntity;
+}

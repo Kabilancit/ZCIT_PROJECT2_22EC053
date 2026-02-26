@@ -1,0 +1,51 @@
+managed implementation in class ZZCIBP_R_CIT_DATABASE2 unique;
+strict ( 2 );
+with draft;
+extensible;
+define behavior for ZZCIR_CIT_DATABASE2 alias ZzcirCitDatabase2
+persistent table ZCIT_DATABASE2
+extensible
+draft table ZZCICIT_DTBSE2_D
+etag master LocalLastChangedAt
+lock master total etag LastChangedAt
+authorization master( global )
+{
+  field ( mandatory : create )
+   Rollno;
+
+  field ( readonly )
+   CreatedBy,
+   CreatedAt,
+   LastChangedBy,
+   LastChangedAt,
+   LocalLastChangedAt;
+
+  field ( readonly : update )
+   Rollno;
+
+
+  create;
+  update;
+  delete;
+
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Edit;
+  draft action Resume;
+  draft determine action Prepare;
+
+  mapping for ZCIT_DATABASE2 corresponding extensible
+  {
+    Rollno = ROLLNO;
+    StudentName = STUDENT_NAME;
+    Gender = GENDER;
+    Age = AGE;
+    Dept = DEPT;
+    CreatedBy = CREATED_BY;
+    CreatedAt = CREATED_AT;
+    LastChangedBy = LAST_CHANGED_BY;
+    LastChangedAt = LAST_CHANGED_AT;
+    LocalLastChangedAt = LOCAL_LAST_CHANGED_AT;
+  }
+
+}
